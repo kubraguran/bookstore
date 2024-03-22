@@ -1,0 +1,43 @@
+body {
+    margin: 0; 
+    padding: 0;
+}
+
+
+
+#sidebar{
+    height:calc(100vh - 56px);
+    margin: 0;
+    background-color: #F6F5F5;
+}
+
+
+
+#list li{
+   margin: 1rem;
+   padding-top: 2rem;
+   list-style-type: none;
+}
+
+#mainPage {
+    background-color: #F6F5F5;
+
+}
+
+#container{
+
+    justify-content: center;
+    display: grid;
+    gap: 55px;
+    grid-template-columns: auto auto auto auto;
+}
+
+#navbarTop{
+    background-color: #F6F5F5;
+}
+
+.carousel-item img {
+    max-height:40vh; 
+    width: auto;
+    margin: 0 auto;
+}
