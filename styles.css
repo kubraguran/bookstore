@@ -28,8 +28,8 @@ body {
 
     justify-content: center;
     display: grid;
-    gap: 55px;
-    grid-template-columns: auto auto auto auto;
+    gap: 60px;
+    grid-template-columns: 20% 20% 20% 20%;
 }
 
 #navbarTop{
@@ -37,7 +37,13 @@ body {
 }
 
 .carousel-item img {
-    max-height:40vh; 
+    max-height:30vh; 
     width: auto;
     margin: 0 auto;
+}
+
+
+.card-link-det {
+text-decoration: none;
+color:rgb(30, 28, 28)
 }
