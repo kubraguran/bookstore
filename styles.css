@@ -1,4 +1,5 @@
 body {
+   
     margin: 0; 
     padding: 0;
 }
@@ -21,15 +22,14 @@ body {
 
 #mainPage {
     background-color: #F6F5F5;
-
 }
 
-#container{
-
+#container {
+ 
     justify-content: center;
     display: grid;
     gap: 60px;
-    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-columns: 10% 10% 10% 10%;
 }
 
 #navbarTop{

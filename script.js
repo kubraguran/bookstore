@@ -1,4 +1,3 @@
-
 class Book {
     constructor(imgSrc, title, detail, price) {
         this.imgSrc = imgSrc;
@@ -58,17 +57,37 @@ books.forEach(book => {
     book.createCard(container);
 });
 
-const searchForm = document.getElementById("searchForm");
-searchForm.addEventListener("submit", function(event) {
+searchForm.addEventListener("submit", function (event) {
     event.preventDefault();
     const searchTerm = document.getElementById("searchInput").value.toLowerCase();
-    const cards = document.querySelectorAll(".card");
-    cards.forEach(function(card) {
-        const title = card.querySelector(".card-title").textContent.toLowerCase();
-        if (title.includes(searchTerm)) {
-            card.style.display = "block";
-        } else {
-            card.style.display = "none";
-        }
-    });
+
+    if (searchTerm.length >= 3 || searchTerm === "") {
+        const cards = document.querySelectorAll(".card");
+        cards.forEach(function (card) {
+            const title = card.querySelector(".card-title").textContent.toLowerCase();
+            if ((searchTerm === "" || title.includes(searchTerm)) && title.length > 3) {
+                card.style.display = "block";
+            } else {
+                card.style.display = "none";
+            }
+        });
+    }
 });
+
+
+//const searchForm = document.getElementById("searchForm");
+//searchForm.addEventListener("submit", function(event) {
+//    event.preventDefault();
+//    const searchTerm = document.getElementById("searchInput").value.toLowerCase();
+//    const cards = document.querySelectorAll(".card");
+//    cards.forEach(function (card) {
+
+//        const title = card.querySelector(".card-title").textContent.toLowerCase();
+//            if (title.includes(searchTerm)) {
+//                card.style.display = "block";
+//            } else {
+//                card.style.display = "none";
+//            }
+        
+//    });
+//});
