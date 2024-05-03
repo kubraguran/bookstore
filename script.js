@@ -14,6 +14,7 @@ function getCard(imgSrc,title, detail,price){
     const cardPrice = clone.querySelector(".card-link-price")
     cardPrice.textContent = price
     container.appendChild(clone)
+    //ses
 }
 
 const titles = ["The Last Devil To Die", "The Villa", "King Of Pride", "Weyward", "River Sing Me Home", "Well Ness" , "Blackouts"]
